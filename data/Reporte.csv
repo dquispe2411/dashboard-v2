@@ -1,0 +1,5 @@
+N° Pedido;Correo;Fecha Trx;Producto;Valor SKU Total;Canal;Método de Entrega;Región;Sucursal
+1001;cliente1@correo.cl;2024-05-01;Almohada Soft;8990;Web;Despacho a Domicilio;Metropolitana;-
+1002;cliente2@correo.cl;2024-05-01;Sábanas 2P;15990;Web;Retiro en Tienda;Valparaíso;Mall Marina
+1003;cliente3@correo.cl;2024-05-02;Plumón King;29990;Marketplace;Despacho a Domicilio;Biobío;-
+1004;cliente1@correo.cl;2024-05-02;Almohada Soft;8990;Web;Retiro en Tienda;Metropolitana;Mall Plaza Egaña
