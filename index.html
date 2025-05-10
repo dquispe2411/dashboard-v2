@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Canontex</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Dashboard de Ventas – Canontex</h1>
+    <input type="text" id="buscador" placeholder="Buscar por SKU o Correo..." onkeyup="filtrarTabla()">
+    <div class="kpis" id="kpis"></div>
+    <canvas id="ventasPorDia"></canvas>
+    <canvas id="productoMasVendido"></canvas>
+    <canvas id="ventasPorCanal"></canvas>
+    <canvas id="ventasPorMetodoEntrega"></canvas>
+    <canvas id="ventasPorRegion"></canvas>
+    <canvas id="retiroEnTienda"></canvas>
+    <table id="tablaDatos"></table>
+    <script src="script.js"></script>
+</body>
+</html>

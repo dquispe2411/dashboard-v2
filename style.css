@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 2rem;
+}
+input {
+    padding: 0.5rem;
+    width: 300px;
+    margin-bottom: 2rem;
+}
+canvas {
+    max-width: 100%;
+    margin-bottom: 3rem;
+}
+.kpis {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
