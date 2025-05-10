@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Dashboard Canontex</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <meta charset="UTF-8" />
+  <title>Dashboard Canontex</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.full.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 <body>
-    <h1>Dashboard de Ventas – Canontex</h1>
-    <input type="text" id="buscador" placeholder="Buscar por SKU o Correo..." onkeyup="filtrarTabla()">
-    <div class="kpis" id="kpis"></div>
+  <h1>Dashboard de Ventas – Cannontex</h1>
+  <div class="controls">
+    <input type="text" id="buscador" placeholder="Buscar por SKU o Correo..." onkeyup="filtrarTabla()" />
+    <div class="buttons">
+      <button onclick="exportarExcel()">📥 Descargar Excel</button>
+      <button onclick="exportarPDF()">📄 Descargar PDF</button>
+    </div>
+  </div>
+  <div class="resumen" id="resumen"></div>
+  <div class="grid">
     <canvas id="ventasPorDia"></canvas>
     <canvas id="productoMasVendido"></canvas>
     <canvas id="ventasPorCanal"></canvas>
     <canvas id="ventasPorMetodoEntrega"></canvas>
     <canvas id="ventasPorRegion"></canvas>
     <canvas id="retiroEnTienda"></canvas>
-    <table id="tablaDatos"></table>
-    <script src="script.js"></script>
+  </div>
+  <table id="tablaDatos"></table>
+  <script src="script.js"></script>
 </body>
 </html>
